@@ -1,0 +1,112 @@
+.navbar {
+  background:white;
+  font-family: 'Lato', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+.header-image {
+  /* linear-gradient = darker background effect */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("keyboard.jpg");
+  height: 80%;
+
+  /* image positioned for all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-light {
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.header-bold {
+  font-weight: 700;
+}
+
+.p-light {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.btn-custom {
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* text on background */
+.header-text {
+  width: 100%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+button{
+  font-family: 'Roboto', sans-serif;
+}
+
+.containerAlign {
+  padding: auto;
+  margin-top: 3em;
+  text-align:center;
+}
+
+.custom-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.item
+{
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  width: 200px;
+  height: 100px;
+}
+.ipResult {
+  font-family: "Courier New", Courier, monospace;
+}
+
+label{
+  display: block;
+  white-space: initial;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+/* #myTable tr {
+width: 100%;
+table-layout: fixed;
+}
+*/
+#myTable table{
+ width:100px;              // <-- Select the height of the table
+}
+/*
+#myTable tbody{
+  overflow-y: scroll;
+  height: 300px;            //  <-- Select the height of the body
+  width: 100%;
+  position: absolute;
+} */
+
