@@ -1,18 +1,55 @@
-.navbar {
-  background:white;
-  font-family: 'Lato', sans-serif;
-}
-
 body, html {
   height: 100%;
   margin: 0;
 }
 
+.btn-custom {
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-send {
+  background-color: #fc5053;
+  color: white;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button{
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-container
+{
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  height: 40%;
+  background-color: white;
+  box-shadow: 1px 1px 20px rgba(28, 29, 29, 0.3);
+  margin-top: 5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .header-image {
   /* linear-gradient = darker background effect */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("keyboard.jpg");
-  height: 80%;
+  background-image: url("gradient.jpg");
+  height: 100%;
 
   /* image positioned for all screens */
   background-position: center;
@@ -21,68 +58,34 @@ body, html {
   position: relative;
 }
 
-.header-light {
-  font-weight: 300;
-  font-size: 60px;
-}
-
-.header-bold {
-  font-weight: 700;
-}
-
-.p-light {
-  font-weight: 300;
-  font-size: 20px;
-}
-
-.btn-custom {
-  border-radius: 2px;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 15px;
-  font-family: 'Lato', sans-serif;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 /* text on background */
 .header-text {
   width: 100%;
   text-align: center;
-  font-family: 'Lato', sans-serif;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
-button{
-  font-family: 'Roboto', sans-serif;
+.header-title {
+  user-select: none;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 400%;
+  color: #EAEEF0;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 1px #f8f9f9,
+  -10px 15px 10px rgba(28, 29, 29, 0.3);
+
 }
 
-.containerAlign {
-  padding: auto;
-  margin-top: 3em;
-  text-align:center;
-}
-
-.custom-container
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
 .item
 {
   background-color: #FFFFFF;
   border-radius: 3px;
   width: 200px;
   height: 100px;
-}
-.ipResult {
-  font-family: "Courier New", Courier, monospace;
 }
 
 label{
@@ -93,20 +96,11 @@ label{
   width: 100%;
 }
 
-
-/* #myTable tr {
-width: 100%;
-table-layout: fixed;
+.navbar {
+  font-family: 'Lato', sans-serif;
 }
-*/
-#myTable table{
- width:100px;              // <-- Select the height of the table
-}
-/*
-#myTable tbody{
-  overflow-y: scroll;
-  height: 300px;            //  <-- Select the height of the body
-  width: 100%;
-  position: absolute;
-} */
 
+.p-light {
+  font-weight: 300;
+  font-size: 20px;
+}
