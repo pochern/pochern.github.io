@@ -8,7 +8,7 @@ body {
 }
 
 .hero-bg {
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), #282525 url('../images/workdesk.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), #282525 url('workdesk.jpg');
   /* <percentage> x, y values of the photo */
   background-position: 58%;
   color: white;
