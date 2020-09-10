@@ -8,31 +8,37 @@
 </head>
 <body>
   <div class="hero-bg">
-    <nav class='topnav' id='topnav'>
-        <a href='#projects'>projects</a>
-        <a href='#about'>about me</a>
-        <a href='#contact'>contact me</a>
-        <a href="javascript:void(0);" class='menu-icon' onclick='toggleMenu()'>
-          <ion-icon name="menu-outline"></ion-icon>
+    <div class=hero>
+      <nav class='topnav' id='topnav'>
+        <div class=sections>
+          <a class='projects' href='#projects'>projects</a>
+          <hr>
+          <a class='about' href='#about'>about me</a>
+          <hr>
+          <a class='contact' href='#contact'>contact me</a>
+        </div>
+          <a href="javascript:void(0);" class='menu-icon' onclick='toggleMenu()'>
+            <ion-icon name="menu-outline"></ion-icon>
+          </a>
+      </nav>
+      <section class='middle'>
+        <h1>Polina Chernomaz</h1>
+        <h2>Front-end developer</h2>
+        <a href="https://github.com/pochern">
+          <ion-icon class='social-icon' name="logo-github"></ion-icon>
         </a>
-    </nav>
-    <section class='middle'>
-      <h1>Polina Chernomaz</h1>
-      <h2>Front-end developer</h2>
-      <a href="https://github.com/pochern">
-        <ion-icon name="logo-github"></ion-icon>
-      </a>
-      <a href="https://www.linkedin.com/in/polinac/">
-      <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-    </section>  
-    <section class='bottom'>
-      <a href=''>
-        <ion-icon name="chevron-down-circle-outline"></ion-icon>
-      </a>
-    </section>
+        <a href="https://www.linkedin.com/in/polinac/">
+        <ion-icon class='social-icon' name="logo-linkedin"></ion-icon>
+        </a>
+      </section>
+      <section class='bottom'>
+        <a href='#projects'>
+          <ion-icon name="chevron-down-circle-outline"></ion-icon>
+        </a>
+      </section>
+    </div>
   </div>
-  <div class='projects'>
+  <div id='projects'>
     <h3>projects</h3>
     <div class='card'>
       <!-- TODO: Place image of spotter here  -->
@@ -85,7 +91,7 @@
     function toggleMenu() {
       var x = document.getElementById('topnav');
       if (x.className === 'topnav') {
-        x.className += 'responsive';
+        x.className += ' responsive';
       }
       else {
         x.className = 'topnav';
