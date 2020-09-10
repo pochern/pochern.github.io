@@ -35,7 +35,7 @@ body {
   margin-bottom: .6em;
 }
 
-.bottom {
+.hero .bottom {
   position: absolute;
   bottom: 0;
   margin-bottom: .2em;
@@ -277,11 +277,6 @@ input[type=button] {
   #about.top p {
     float: left;
     width: 50%;
-  }
-
-  #about .bottom {
-    position: relative;
-    text-align: left;
   }
 
   #contact {
