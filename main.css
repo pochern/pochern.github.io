@@ -131,7 +131,7 @@ a {
 }
 
 #projects {
-  padding: 3em 3em 1em 3em;
+  padding: 3em 5em 1em 5em;
 }
 
 #projects hr {
@@ -256,4 +256,35 @@ input[type=button] {
   padding: .5em;
   outline: none;
   -webkit-appearance: none;
+}
+
+/* for tablet sizes */
+@media (min-width: 600px) {
+  #projects {
+    padding: 3em 8em 1em 8em;
+  }
+
+  #about img {
+    width: 80%;
+  }
+
+  #about .profile {
+    float: right;
+    width: 45%;
+    margin: 0;
+  }
+
+  #about.top p {
+    float: left;
+    width: 50%;
+  }
+
+  #about .bottom {
+    position: relative;
+    text-align: left;
+  }
+
+  #contact {
+    margin: 3em 8em;
+  }
 }
