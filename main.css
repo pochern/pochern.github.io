@@ -255,4 +255,5 @@ input[type=button] {
   display: block;
   padding: .5em;
   outline: none;
+  -webkit-appearance: none;
 }
