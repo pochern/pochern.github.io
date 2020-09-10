@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.hero-bg {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), #282525 url('../images/workdesk.jpg');
+  /* <percentage> x, y values of the photo */
+  background-position: 58%;
+  color: white;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-bg ion-icon {
+  color: white;
+  /* font-size: 1.5em; */
+}
+
+.middle h1 {
+  font-size: 2.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: .3em;
+}
+.middle h2 {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: .6em;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: .2em;
+  left: 0;
+  text-align: center;
+  font-size: 3.5rem;
+  width: 100%;
+}
+
+.hero {
+  margin: 0 2.8em;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.topnav {
+  /* when element's content is too big to fit in block, hide */
+  /* overflow: hidden; */
+  position: absolute;
+  top: 0;
+  /* background-color: white; */
+}
+
+.topnav a {
+  /* let links be displayed where it occurs in text */
+  float: left;
+  /* displays an element as a block - starts on new line and takes up whole width */
+  display: block;
+  /* removes underline from link */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.topnav a:hover {
+  color: red;
+}
+
+.topnav hr {
+  display: none;
+}
+
+.topnav a:not(.menu-icon) {
+  display: none;
+}
+
+.topnav a.menu-icon {
+  float: left;
+  display:block;
+  margin-top: 0.5em;
+  font-size: 3em;
+}
+
+.hero .social-icon {
+  font-size: 2.5em;
+  margin-right: .4em;
+}
+
+.topnav.responsive {
+  /* element positioned relative to its normal position */
+  position: absolute;
+  top: 0;
+}
+
+.topnav.responsive .menu-icon {
+  /* the element is positioned relative to its first positioned
+  ancestor element */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav.responsive hr {
+  float: none;
+  display: block;
+}
+
+.topnav.responsive .sections {
+  margin-top: 5.5em;
+  background-color: white;
+  border-radius: 5px;
+  padding: .8em 1.2em .8em 1.2em;
+}
+
+.topnav.responsive .sections a {
+  color: black;
+  font-size: 1.5rem;
+}
+/* .topnav.responsive .sections .projects {
+  padding-bottom: 1em;
+}
+.topnav.responsive .sections .about {
+  padding-bottom: 1em;
+} */
