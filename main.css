@@ -246,7 +246,7 @@ form label {
 input[type=button] {
   color: #00712E;
   border: 3px solid #00712E;
-  background-color: white;
+  background-color: white !important;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3em;
   border-radius: 25px;
