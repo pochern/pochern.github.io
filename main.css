@@ -248,7 +248,7 @@ form label {
   font-weight: 700;
 }
 
-input[type=button] {
+form button {
   color: #00712E;
   border: 3px solid #00712E;
   background-color: white !important;
