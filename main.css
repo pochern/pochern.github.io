@@ -287,6 +287,13 @@ form button {
   padding: .5em;
   outline: none;
   -webkit-appearance: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #00712E !important;
+  color: white;
 }
 
 /* for tablet sizes */
