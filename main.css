@@ -215,6 +215,32 @@ h4 {
   margin: 3em;
 }
 
+.thank-you {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.checkmark {
+  font-size: 15em;
+  color: #00712E;
+}
+
+.thank-you h5 {
+  font-size: 1.5rem;
+}
+
+.thank-you h4 {
+  margin-top: .6em;
+}
+
+.container {
+  margin: 0 2.8em;
+}
+
+.container .topnav ion-icon {
+  color: black;
+}
+
 form input[type='text'] {
   display: block;
   width: 100%;
