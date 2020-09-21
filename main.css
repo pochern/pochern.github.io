@@ -3,7 +3,6 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  height: 100%;
   box-sizing: border-box;
   /* to fix iOS and old android scrolling */
   –webkit-overflow-scrolling: touch;
@@ -144,16 +143,23 @@ h3 {
   margin: 0 0 1em 0;
 }
 
-#projects section.top, #projects section.bottom {
-  justify-content: center;
-}
-
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
-  margin-bottom: 3em;
+  /* margin-bottom: 3em;
+  width: 100%; */
+}
+
+.column {
+  float: left;
+  width: 100%;
+}
+
+.cards {
+  margin: 8px -16px;
+  overflow: auto;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -165,7 +171,7 @@ h3 {
   color: black;
 }
 
-section.view-github {
+section.view-proj {
   display: flex;
   font-size: 1.3em;
   width: 100%;
@@ -298,6 +304,10 @@ form button:hover {
 
 /* for tablet sizes */
 @media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
+
   #projects {
     padding: 3em 30vw 1em 30vw;
   }
@@ -332,21 +342,13 @@ form button:hover {
     padding: 3em 15vw 1em 15vw;
   }
 
-  .card {
+  .column {
     margin-bottom: 5em;
-  }
-
-  #projects section.top {
-    display: flex;
-    box-sizing: border-box;
+    width: 50%;
   }
 
   #projects section.bottom {
     text-align: -webkit-center;
-  }
-
-  #projects .left-card {
-    margin-right: 10em;
   }
 
   #about {
@@ -374,19 +376,10 @@ form button:hover {
     margin-right: 5em;
   }
 
-  .card {
-    width: 20vw;
+  .column {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-
-  .cards {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3.5em;
+    /* padding: 8em; */
+    width: 25%;
   }
 
   #projects section.bottom > .card {
