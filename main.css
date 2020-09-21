@@ -257,6 +257,7 @@ form input[type='text'] {
   border-radius: 5px;
   border: 1px solid #707070;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
 }
 
 form input[type='text']:focus, form textarea:focus {
@@ -274,10 +275,12 @@ form textarea {
   height: 15em;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
 }
 
 form label {
   font-weight: 700;
+  font-size: 1.3rem;
 }
 
 form button {
@@ -347,10 +350,6 @@ form button:hover {
     width: 50%;
   }
 
-  #projects section.bottom {
-    text-align: -webkit-center;
-  }
-
   #about {
     padding: 3em 15vw;
   }
@@ -372,18 +371,10 @@ form button:hover {
     vertical-align: top;
   }
 
-  #projects .left-card, #projects .right-card {
-    margin-right: 5em;
-  }
-
   .column {
     margin: 0;
     /* padding: 8em; */
     width: 25%;
-  }
-
-  #projects section.bottom > .card {
-    align-items: stretch;
   }
 
   #contact {
