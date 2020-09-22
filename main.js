@@ -8,6 +8,13 @@ function toggleMenu() {
   }
 }
 
+// Closing menu when clicking anywhere else on site
+$('body').click(function(evt){
+  if(evt.target.name != "menu-outline"){
+    $('#topnav').removeClass('responsive');
+  }
+});
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
