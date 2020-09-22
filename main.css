@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
   /* to fix iOS and old android scrolling */
   –webkit-overflow-scrolling: touch;
 }
@@ -167,7 +168,7 @@ h3 {
 }
 
 .cards {
-  margin: 8px -16px;
+  margin: 8px 0;
   overflow: auto;
 }
 
