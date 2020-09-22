@@ -10,16 +10,6 @@
   <div class="hero-bg">
     <div class=hero>
       <nav class='topnav' id='topnav'>
-        <div class=sections>
-          <a class='projects' href='#projects'>projects</a>
-          <hr>
-          <a class='about' href='#about'>about me</a>
-          <hr>
-          <a class='contact' href='#contact'>contact me</a>
-        </div>
-          <a href="javascript:void(0);" class='menu-icon' onclick='toggleMenu()'>
-            <ion-icon name="menu-outline"></ion-icon>
-          </a>
       </nav>
       <section class='middle'>
         <h1>Polina Chernomaz</h1>
@@ -38,52 +28,61 @@
       </section>
     </div>
   </div>
+
   <div id='projects'>
     <h3>projects</h3>
     <div class="cards">
-      <section class="top">
-        <div class='left-card card'>
-          <img src="iosProject.png" alt="Picture of Spotter iOS app">
-          <div class="bottom-button">
-            <hr>
-            <a href="https://github.com/pochern/spotter">
-              <section class='view-github'>
-                <ion-icon name="logo-github"></ion-icon>
-                <h5>View on GitHub</h5>
-              </section>
-            </a>
-          </div>
+      <div class="column">
+        <div class="card">
+          <a href="https://youtu.be/CUJ3u_I282o">
+            <img src="assetTracker.png" alt="Picture of Asset Tracker application">
+            <h4>Asset Tracker</h4>
+            <section class='view-proj'>
+              <ion-icon name="logo-youtube"></ion-icon>
+              <h5>View on YouTube</h5>
+            </section>
+          </a>
         </div>
-        <div class='right-card card'>
-          <img src="webProject.png" alt="Picture of One Goal web app">
-          <div class="bottom-button">
-            <hr>
-            <a href="https://github.com/pochern/one-goal-app">
-              <section class='view-github'>
-                <ion-icon name="logo-github"></ion-icon>
-                <h5>View on GitHub</h5>
-              </section>
-            </a>
-          </div>
+      </div> 
+      <div class="column">
+        <div class="card">
+          <a href="https://github.com/pochern/one-goal-app">
+            <img src="webProject.png" alt="Picture of One Goal web app">
+            <h4>One Goal</h4>
+            <section class='view-proj'>
+              <ion-icon name="logo-github"></ion-icon>
+              <h5>View on GitHub</h5>
+            </section>
+          </a>
         </div>
-      </section>
-      <section class="bottom">
+      </div>
+      <div class="column">
+        <div class="card">
+          <a href="https://github.com/pochern/spotter">
+            <img src="iosProject.png" alt="Picture of Spotter iOS app">
+            <h4>Spotter</h4>
+            <section class='view-proj'>
+              <ion-icon name="logo-github"></ion-icon>
+              <h5>View on GitHub</h5>
+            </section>
+          </a>
+        </div>
+      </div>
+      <div class="column">
         <div class='card'>
-          <!-- TODO: Place image of weather wear here -->
-          <img src="androidProject.png" alt="Picture of Android phone">
-          <div class="bottom-button">
-            <hr>
-            <a href="https://github.com/pochern/WeatherWear">
-              <section class='view-github'>
-                <ion-icon name="logo-github"></ion-icon>
-                <h5>View on GitHub</h5>
-              </section>
-            </a>
-          </div>
+          <a href="https://github.com/pochern/WeatherWear">
+            <img src="androidProject.png" alt="Picture of Android phone">
+            <h4>Weather Wear</h4>
+            <section class='view-proj'>
+              <ion-icon name="logo-github"></ion-icon>
+              <h5>View on GitHub</h5>
+            </section>
+          </a>
         </div>
-      </section>
+      </div>
     </div>
   </div>
+
   <div id='about'>
     <h3>about me</h3>
     <section class="top">
@@ -97,58 +96,27 @@
       <p>React, HTML, CSS, JavaScript, Python, React Native</p>
     </section>
   </div>
+
   <div id='contact'>
     <h3>contact me</h3>
-    <form action="">
+    <form id='contact-form' action="https://api.mailslurp.com/forms" method="post">
+      <!-- email as a hidden `_to` field -->
+      <input type="hidden" name="_to" value="pachernomaz@gmail.com" />
+      <input type="hidden" name="_subject" value="Portoflio Website Contact" />
+      <input type="hidden" name="_redirectTo" value="http://127.0.0.1:5501/thank-you.html" />
+      <!-- data fields -->
       <label for="name">Name:</label>
       <input type="text" name='name' id='name'>
       <label for="email">Email Address:</label>
       <input type="text" name='email' id='email'>
       <label for="message">Message:</label>
       <textarea id="message" name="message"></textarea>
-      <input type="button" value="Submit">
+      <button type="submit">Submit</button>
     </form>
   </div>
 
-  <!-- JS here for now -->
-  <script>
-    function toggleMenu() {
-      var x = document.getElementById('topnav');
-      if (x.className === 'topnav') {
-        x.className += ' responsive';
-      }
-      else {
-        x.className = 'topnav';
-      }
-    }
-  </script>
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
